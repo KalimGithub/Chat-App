@@ -21,16 +21,21 @@
     <div class="chat-container">
         <div class="heading">Welcome to Chat App</div>
         <div class="message-container">
-            <div class="message">Hey</div>
-            <div class="message send">Hi</div>
+            <!-- <div class="message">Hey</div>
+            <div class="message send">Hi</div> -->
         </div>
         <div class="send-message-div">
             <input type="text" id="message-input" placeholder="Enter a message">
             <button class="send-btn" id="send-btn">Send</button>
         </div>
     </div>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <!-- <script src="./server.js"></script> -->
     <script src="./script.js"></script>
-    <script src="./server.js"></script>
 </body>
 
 </html>
